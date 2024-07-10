@@ -27,7 +27,7 @@ export default class Strings {
     desc: "I am not just a developer; I am an architect of robust and scalable backend systems, a designer of seamless data flows, and a guardian of cutting-edge server-side technology. With an unwavering commitment to reliability, performance, and security, I craft backend architectures that are the backbone of immersive web experiences. My expertise spans database design, API development, allowing me to create systems that not only support but enhance the frontend experience. By seamlessly weaving together the threads of efficiency, scalability, and maintainability, I produce backend solutions that resonate with both developers and end-users.",
     button_1: "My Work",
     button_2: "Get In Touch",
-    img: "https://i.postimg.cc/cLgzsW-d0/raka1.jpg",
+    img: "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYUOezIFgBgOxn0FyaonAbCf0T93DCSrsBrH7x-cipHraYkOlcochkIQnHHat480Jor4yLaOqathMt72rDyQ4g3uqm12blMSA=w1920-h945-rw-v1",
   };
 
   static readonly portfolio = {
