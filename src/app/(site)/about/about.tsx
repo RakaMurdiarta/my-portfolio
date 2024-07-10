@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <img
             src={Strings.about.img}
             alt={Strings.about.name}
-            className="w-6/12 xl:w-[90%] h-auto aspect-square grayscale hover:grayscale-0 hover:scale-105 transition-all ease-in-out duration-300"
+            className="w-6/12 xl:w-[90%] h-auto aspect-square hover:grayscale-0 hover:scale-105 transition-all ease-in-out duration-300 object-contain"
           />
         </div>
         <div className="w-full xl:w-6/12 h-auto flex justify-center items-center sm:items-start flex-col gap-4">
