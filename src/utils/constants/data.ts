@@ -29,35 +29,35 @@ export const homeIcon: string[] = [
 
 export const portfolios = [
   {
-    name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda maxime iure at praesentium laudantium repudiandae ex autem debitis voluptatum, consectetur aspernatur laborum perferendis error, ratione sunt est ea in rerum?",
+    name: "Car Rent",
     img: "https://i.postimg.cc/dQ9LJ7Bm/Screenshot-2024-07-10-at-06-51-46.png",
     link: "https://car-showroom-next.vercel.app/",
     github: "https://github.com/RakaMurdiarta/car-showroom-next",
     techstackIcon: [
       "logos:react",
-      "logos:vue",
+      "logos:nexjs",
       "logos:typescript-icon",
       "vscode-icons:file-type-tailwind",
     ],
   },
   {
-    name: "Dhatu",
+    name: "Dhatu Gateway",
     img: "https://i.ibb.co.com/Fs8c2SJ/Screenshot-2024-07-10-at-07-06-20.png",
     link: "https://testnet-console.dhatu.io/",
     techstackIcon: [
-      "logos:react",
-      "logos:vue",
+      "logos:rust",
+      "logos:nextjs",
       "logos:typescript-icon",
       "vscode-icons:file-type-tailwind",
     ],
   },
   {
-    name: "dhatu analytics",
-    img: "https://cdn.dribbble.com/userupload/9628174/file/original-22c4527ec1a581847cc750065ebc581d.png",
-    link: "http://testnet-analytics.dhatu.io/",
+    name: "Dhatu Analytics",
+    img: "https://i.ibb.co.com/Kxs6tgg/Screenshot-2024-07-10-at-07-48-06.png",
+    link: "https://testnet-analytics.dhatu.io/",
     techstackIcon: [
       "logos:react",
-      "logos:vue",
+      "logos:nextjs",
       "logos:typescript-icon",
       "vscode-icons:file-type-tailwind",
     ],
@@ -65,10 +65,11 @@ export const portfolios = [
   {
     name: "e.id Wallet",
     img: "https://i.ibb.co.com/jJ1HtyJ/Screenshot-2024-07-10-at-07-29-11.png",
-    link: "e.id",
+    link: "https://e.id",
     techstackIcon: [
       "logos:react",
-      "logos:vue",
+      "logos:expressjs",
+      "logos:redis",
       "logos:typescript-icon",
       "vscode-icons:file-type-tailwind",
     ],
