@@ -33,21 +33,45 @@ export const portfolios = [
     img: "https://i.postimg.cc/dQ9LJ7Bm/Screenshot-2024-07-10-at-06-51-46.png",
     link: "https://car-showroom-next.vercel.app/",
     github: "https://github.com/RakaMurdiarta/car-showroom-next",
+    techstackIcon: [
+      "logos:react",
+      "logos:vue",
+      "logos:typescript-icon",
+      "vscode-icons:file-type-tailwind",
+    ],
   },
   {
-    name: "Dhatu Gateway is an application aimed at bridging the implementation of web3 with APIs that can be used with web2 technology. Developers who want to use blockchain technology, such as storing data in the blockchain, can use the APIs provided by Dhatu.",
+    name: "Dhatu",
     img: "https://i.ibb.co.com/Fs8c2SJ/Screenshot-2024-07-10-at-07-06-20.png",
     link: "https://testnet-console.dhatu.io/",
+    techstackIcon: [
+      "logos:react",
+      "logos:vue",
+      "logos:typescript-icon",
+      "vscode-icons:file-type-tailwind",
+    ],
   },
   {
     name: "dhatu analytics",
-    img: "https://i.ibb.co.com/Kxs6tgg/Screenshot-2024-07-10-at-07-48-06.png",
+    img: "https://cdn.dribbble.com/userupload/9628174/file/original-22c4527ec1a581847cc750065ebc581d.png",
     link: "http://testnet-analytics.dhatu.io/",
+    techstackIcon: [
+      "logos:react",
+      "logos:vue",
+      "logos:typescript-icon",
+      "vscode-icons:file-type-tailwind",
+    ],
   },
   {
-    name: "e.id Wallet is a digital identity application that leverages blockchain technology and subdomains. I contribute as a backend engineer with various tasks ranging from database initiation, Redis implementation, to integration with third parties such as social media, payment gateways, and identity verifiers",
+    name: "e.id Wallet",
     img: "https://i.ibb.co.com/jJ1HtyJ/Screenshot-2024-07-10-at-07-29-11.png",
     link: "e.id",
+    techstackIcon: [
+      "logos:react",
+      "logos:vue",
+      "logos:typescript-icon",
+      "vscode-icons:file-type-tailwind",
+    ],
   },
 ];
 

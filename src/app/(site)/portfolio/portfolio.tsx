@@ -21,47 +21,57 @@ const Portfolio: React.FC = () => {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {portfolios.map((porto, index) => (
             <div key={index}>
-              <div className="group block relative overflow-hidden rounded-xl transition-all ease-in-out duration-300 hover:shadow-xl min-h-[300px]">
+              <div className="group block relative overflow-hidden rounded-xl transition-all ease-in-out duration-300 hover:shadow-xl">
                 <div className="w-full h-[250px] transition-all ease-in-out duration-300">
                   <img
-                    className=" w-full h-full group-hover:brightness-50 brightness-100 object-cover object-center transition-all ease-in-out duration-300"
+                    className=" w-full h-full group-hover:brightness-50 brightness-100 object-cover object-center transition-all ease-in-out duration-300 group-hover:grayscale-0"
                     src={porto.img}
                     alt={porto.name}
                   />
                 </div>
-                <div className="bg-white w-full absolute bottom-[-150px] gap-2 p-4 transition-all ease-in-out duration-300 group-hover:bottom-[0] flex justify-between">
-                  <p className="font-bold text-base min-h-[3rem] line-clamp-4 w-1/2">
-                    {porto.name}
-                  </p>
-
-                  <div className="h-auto flex flex-col w-1/2 gap-2 items-center justify-center">
-                    <a
-                      href={porto.link}
-                      target="_blank"
-                      className="w-full p-2 rounded-xl border text-sm flex justify-between items-center hover:bg-black hover:text-white transition-all ease-in-out duration-300 group"
-                    >
-                      {Strings.portfolio.visit}
+                <div className=" w-full absolute bottom-[-250px]  transition-all ease-in-out duration-300 group-hover:bottom-[0] ">
+                  <div className="w-full flex justify-center items-center text-white h-[100px] gap-2">
+                    {porto.techstackIcon.map((icon, index) => (
                       <Icon
                         key={index}
-                        icon="entypo:direction"
-                        className="w-7 h-7 text-inherit group-hover:scale-110 "
+                        icon={icon}
+                        className="w-10 h-10  hover:scale-110 transition-all ease-in-out"
                       />
-                    </a>
-
-                    {porto.github && (
+                    ))}
+                  </div>
+                  <div className="w-full bg-white gap-2 p-4 flex justify-between h-[150px]">
+                    <p className="font-bold text-base min-h-[3rem] line-clamp-4 w-1/2">
+                      {porto.name}
+                    </p>
+                    <div className="h-auto flex flex-col w-1/2 gap-2 items-center justify-center">
                       <a
-                        href={porto.github}
+                        href={porto.link}
                         target="_blank"
                         className="w-full p-2 rounded-xl border text-sm flex justify-between items-center hover:bg-black hover:text-white transition-all ease-in-out duration-300 group"
                       >
-                        {Strings.portfolio.source}
+                        {Strings.portfolio.visit}
                         <Icon
                           key={index}
-                          icon="mdi:github"
-                          className="w-7 h-7 text-inherit group-hover:scale-110"
+                          icon="entypo:direction"
+                          className="w-7 h-7 text-inherit group-hover:scale-110 "
                         />
                       </a>
-                    )}
+
+                      {porto.github && (
+                        <a
+                          href={porto.github}
+                          target="_blank"
+                          className="w-full p-2 rounded-xl border text-sm flex justify-between items-center hover:bg-black hover:text-white transition-all ease-in-out duration-300 group"
+                        >
+                          {Strings.portfolio.source}{" "}
+                          <Icon
+                            key={index}
+                            icon="mdi:github"
+                            className="w-7 h-7 text-inherit group-hover:scale-110"
+                          />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
