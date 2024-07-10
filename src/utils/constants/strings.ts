@@ -11,7 +11,7 @@ export default class Strings {
   static readonly home = {
     hello: "Hi,",
     im: "I'm",
-    name: "Raka Murdiarta",
+    name: "Raka",
     a: "a",
     type_one: "Backend",
     type_two: "Developer",
