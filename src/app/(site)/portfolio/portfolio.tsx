@@ -21,10 +21,10 @@ const Portfolio: React.FC = () => {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {portfolios.map((porto, index) => (
             <div key={index}>
-              <div className="group block relative overflow-hidden rounded-xl transition-all ease-in-out duration-300 hover:shadow-xl">
-                <div className="w-full h-full transition-all ease-in-out duration-300">
+              <div className="group block relative overflow-hidden rounded-xl transition-all ease-in-out duration-300 hover:shadow-xl min-h-[300px]">
+                <div className="w-full h-[250px] transition-all ease-in-out duration-300">
                   <img
-                    className=" w-full h-auto group-hover:brightness-50 brightness-100 object-cover object-center transition-all ease-in-out duration-300 grayscale group-hover:grayscale-0"
+                    className=" w-full h-full group-hover:brightness-50 brightness-100 object-cover object-center transition-all ease-in-out duration-300"
                     src={porto.img}
                     alt={porto.name}
                   />
@@ -48,18 +48,20 @@ const Portfolio: React.FC = () => {
                       />
                     </a>
 
-                    <a
-                      href={porto.github}
-                      target="_blank"
-                      className="w-full p-2 rounded-xl border text-sm flex justify-between items-center hover:bg-black hover:text-white transition-all ease-in-out duration-300 group"
-                    >
-                      {Strings.portfolio.source}{" "}
-                      <Icon
-                        key={index}
-                        icon="mdi:github"
-                        className="w-7 h-7 text-inherit group-hover:scale-110"
-                      />
-                    </a>
+                    {porto.github && (
+                      <a
+                        href={porto.github}
+                        target="_blank"
+                        className="w-full p-2 rounded-xl border text-sm flex justify-between items-center hover:bg-black hover:text-white transition-all ease-in-out duration-300 group"
+                      >
+                        {Strings.portfolio.source}
+                        <Icon
+                          key={index}
+                          icon="mdi:github"
+                          className="w-7 h-7 text-inherit group-hover:scale-110"
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
