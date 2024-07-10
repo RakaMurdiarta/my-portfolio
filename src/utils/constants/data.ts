@@ -30,7 +30,7 @@ export const homeIcon: string[] = [
 export const portfolios = [
   {
     name: "Car Rent",
-    img: "https://i.postimg.cc/dQ9LJ7Bm/Screenshot-2024-07-10-at-06-51-46.png",
+    img: "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihb4Nfgk4PYsZ90lev_YaDK38zTn2yapsM2crz7N44_5zub7caa96-F5nKPbsmuCQLBpOfo4gHhOxEfSehATDyCzDN0vjFDcIQQ=w1920-h945-rw-v1",
     link: "https://car-showroom-next.vercel.app/",
     github: "https://github.com/RakaMurdiarta/car-showroom-next",
     techstackIcon: [
